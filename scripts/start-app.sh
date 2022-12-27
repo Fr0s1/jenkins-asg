@@ -1,3 +1,3 @@
 #!/bin/bash
 
-nohup nodejs /app/app.js > /dev/null 2> /dev/null < /dev/null &
+nohup node /app/out.js > /dev/null 2> /dev/null < /dev/null &
