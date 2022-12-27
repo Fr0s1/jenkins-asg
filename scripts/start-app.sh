@@ -1,3 +1,4 @@
 #!/bin/bash
 
-nohup node /app/out.js > /dev/null 2> /dev/null < /dev/null &
+systemctl start node.service
+systemctl enable node.service

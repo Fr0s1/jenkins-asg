@@ -8,6 +8,10 @@ hooks:
     - location: scripts/install_dependencies.sh
       timeout: 300
       runas: root
+  AfterInstall:
+    - location: scripts/create-service.sh
+      timeout: 300
+      runas: root
   ApplicationStart:
     - location: scripts/start-app.sh
       timeout: 300
