@@ -1,0 +1,26 @@
+version: 0.2
+
+phases:
+  install: 
+    runtime-versions:
+      nodejs: latest
+  
+  pre_build:
+    commands:
+      - echo "Installing npm packages"
+      - npm install
+  
+  build:
+    commands:
+      - npm run build
+
+  post_build:
+    commands:
+      - echo "Build finished"
+
+artifacts:
+  files:
+    - out.js
+    - appspec.yml
+    - scripts/**/*
+  discard-paths: yes
