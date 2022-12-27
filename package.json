@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "esbuild index.js --bundle --platform=node --target=node18.0 --outfile=out.js"
+    "build": "esbuild index.js --bundle --platform=node --target=node16.0 --outfile=out.js",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
