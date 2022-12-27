@@ -2,17 +2,17 @@ version: 0.2
 os: linux
 files:
   - source: /out.js
-    destination: /home/ec2-user/out.js
+    destination: /out.js
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies.sh
       timeout: 300
-      runas: ec2-user
+      runas: root
   ApplicationStart:
     - location: scripts/start-app.sh
       timeout: 300
-      runas: ec2-user
+      runas: root
   ApplicationStop:
     - location: scripts/stop-app.sh
       timeout: 300
-      runas: ec2-user
+      runas: root
