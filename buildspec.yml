@@ -23,4 +23,4 @@ artifacts:
     - out.js
     - appspec.yml
     - scripts/**/*
-  discard-paths: yes
+  discard-paths: no
