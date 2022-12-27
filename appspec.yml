@@ -2,7 +2,7 @@ version: 0.2
 os: linux
 files:
   - source: /out.js
-    destination: /out.js
+    destination: /home/ec2-user/out.js
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies.sh
