@@ -6,13 +6,13 @@ const os = require("os");
 const hostname = os.hostname();
 
 app.get("/", (req, res) => {
-  res.send(`Hello World version 4 in asg from ${hostname} at ${new Date()}!`);
+  res.send(`Hello World version 5 in asg from ${hostname} at ${new Date()}!`);
 });
 
 app.get("/test", (req, res) => {
-  res.send(`New path version 4 in asg from ${hostname} at ${new Date()}!`);
+  res.send(`New path version 5 in asg from ${hostname} at ${new Date()}!`);
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Express app listening on port ${port}`);
 });
