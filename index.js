@@ -6,7 +6,7 @@ const os = require("os");
 const hostname = os.hostname();
 
 app.get("/", (req, res) => {
-  res.send(`Hello World version 2 from ${hostname}!`);
+  res.send(`Hello World version 3 in asg from ${hostname}!`);
 });
 
 app.get("/test", (req, res) => {
