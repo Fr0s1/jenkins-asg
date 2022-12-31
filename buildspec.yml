@@ -21,6 +21,6 @@ phases:
 artifacts:
   files:
     - out.js
-    - appspec.yml
+    - appspec.*.yml
     - scripts/**/*
   discard-paths: no
