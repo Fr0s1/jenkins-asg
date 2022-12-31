@@ -21,6 +21,8 @@ phases:
 artifacts:
   files:
     - out.js
-    - appspec.*.yml
+    - appspec.hieudt37-uat.yml
+    - appspec.hieudt37-jenkins.yml
+    - appspec.yml
     - scripts/**/*
   discard-paths: no
