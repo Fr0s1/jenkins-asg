@@ -8,7 +8,7 @@ const hostname = os.hostname();
 const branch = 'PROD'
 
 app.get("/", (req, res) => {
-  res.send(`Branch ${branch}: Hello World version deployed by Jenkins version triggered by GitHub Webhook in asg from ${hostname} at ${new Date()}!`);
+  res.send(`Branch ${branch}: Hello World version deployed by Jenkins triggered by GitHub Webhook in ASG from ${hostname} at ${new Date()}!`);
 });
 
 app.get("/test", (req, res) => {
